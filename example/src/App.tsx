@@ -105,7 +105,7 @@ export default function App() {
     initLlama({
       model: file.uri,
       use_mlock: true,
-      n_gpu_layers: Platform.OS === 'ios' ? 0 : 0, // > 0: enable GPU, put in the number of layers
+      n_gpu_layers: Platform.OS === 'ios' ? 100 : 100, // > 0: enable GPU, put in the number of layers
       // embedding: true,
     })
       .then((ctx) => {
