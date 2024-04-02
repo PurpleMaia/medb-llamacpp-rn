@@ -7,9 +7,21 @@ import type { DocumentPickerResponse } from 'react-native-document-picker'
 import { Chat, darkTheme } from '@flyerhq/react-native-chat-ui'
 import type { MessageType } from '@flyerhq/react-native-chat-ui'
 import ReactNativeBlobUtil from 'react-native-blob-util'
+import "react-native-polyfill-globals/auto";
+import structuredClone from "@ungap/structured-clone";
+// import { ChatOpenAI } from "@langchain/openai";
 // eslint-disable-next-line import/no-unresolved
 import { initLlama, LlamaContext, convertJsonSchemaToGrammar } from 'llama.rn'
 import { Bubble } from './Bubble'
+
+
+if (!("structuredClone" in globalThis)) {
+  globalThis.structuredClone = structuredClone;
+}
+
+/* const chatModel = new ChatOpenAI({
+  openAIApiKey: "something",
+}); */
 
 const { dirs } = ReactNativeBlobUtil.fs
 
