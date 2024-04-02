@@ -72,4 +72,4 @@ lib/
 docs/API/.nojekyll
 
 *.metallib
-.xocde.env.local
+.xcode.env.local
