@@ -73,7 +73,7 @@ export default function App() {
     }
   }
 
-  const addSystemMessage = (text: string, metadata = {} ) => {
+  const addSystemMessage = (text: string, metadata = {}) => {
     const textMessage: MessageType.Text = {
       author: system,
       createdAt: Date.now(),
@@ -105,20 +105,19 @@ export default function App() {
     initLlama({
       model: file.uri,
       use_mlock: true,
-      n_gpu_layers: Platform.OS === 'ios' ? 0 : 0, // > 0: enable GPU
+      n_gpu_layers: Platform.OS === 'ios' ? 0 : 0, // > 0: enable GPU, put in the number of layers
       // embedding: true,
     })
       .then((ctx) => {
         setContext(ctx)
         addSystemMessage(
-          `Context initialized! \n\nGPU: ${ctx.gpu ? 'YES' : 'NO'} (${
-            ctx.reasonNoGPU
+          `Context initialized! \n\nGPU: ${ctx.gpu ? 'YES' : 'NO'} (${ctx.reasonNoGPU
           })\n\n` +
-            'You can use the following commands:\n\n' +
-            '- /bench: to benchmark the model\n' +
-            '- /release: release the context\n' +
-            '- /stop: stop the current completion\n' +
-            '- /reset: reset the conversation',
+          'You can use the following commands:\n\n' +
+          '- /bench: to benchmark the model\n' +
+          '- /release: release the context\n' +
+          '- /stop: stop the current completion\n' +
+          '- /reset: reset the conversation',
         )
       })
       .catch((err) => {
@@ -138,9 +137,8 @@ export default function App() {
             if (!(await ReactNativeBlobUtil.fs.isDir(dir)))
               await ReactNativeBlobUtil.fs.mkdir(dir)
 
-            const filepath = `${dir}/${
-              file.uri.split('/').pop() || 'model'
-            }.gguf`
+            const filepath = `${dir}/${file.uri.split('/').pop() || 'model'
+              }.gguf`
             if (await ReactNativeBlobUtil.fs.exists(filepath)) {
               handleInitContext({ uri: filepath } as DocumentPickerResponse)
               return
@@ -184,7 +182,7 @@ export default function App() {
             ppStd,
             tgAvg,
             tgStd,
-           } = await context.bench(512, 128, 1, 3)
+          } = await context.bench(512, 128, 1, 3)
 
           const size = `${(modelSize / 1024.0 / 1024.0 / 1024.0).toFixed(2)} GiB`
           const nParams = `${(modelNParams / 1e9).toFixed(2)}B`
