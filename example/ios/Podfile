@@ -27,7 +27,7 @@ end
 
 ENV['RCT_NEW_ARCH_ENABLED'] = '1'
 
-target 'RNLlamaExample' do
+target 'MEDBRNLlama' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -47,18 +47,23 @@ target 'RNLlamaExample' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'RNLlamaExampleTests' do
+  target 'MEDBRNLlamaTests' do
     inherit! :complete
     # Pods for testing
   end
 
   post_install do |installer|
+    installer.pods_project.targets.each do |target|
+    # Added below if-end statement
+      if target.name == "React-Core-RCTI18nStrings"
+        target.remove_from_project
+      end
+    end
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
       config[:reactNativePath],
       :mac_catalyst_enabled => false
     )
-    __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 end
