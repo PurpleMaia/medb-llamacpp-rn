@@ -53,12 +53,12 @@ target 'MEDBRNLlama' do
   end
 
   post_install do |installer|
-    installer.pods_project.targets.each do |target|
+    # installer.pods_project.targets.each do |target|
     # Added below if-end statement
-      if target.name == "React-Core-RCTI18nStrings"
-        target.remove_from_project
-      end
-    end
+    #  if target.name == "React-Core-RCTI18nStrings"
+    #    target.remove_from_project
+    #  end
+    #end
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,

@@ -486,7 +486,7 @@ export default function App() {
         addSystemMessage(`Completion failed: ${e.message}`)
       })
   }
-  main()
+  // main()
 
   return (
     <SafeAreaProvider>

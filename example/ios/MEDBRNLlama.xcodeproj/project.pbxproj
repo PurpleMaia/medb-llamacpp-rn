@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3F533AAB98B18558F93167E7 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 251E19389236CD89A948CDC0 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a */; };
+		16A4EF11FABE61CF334A2AC7 /* libPods-MEDBRNLlama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9AB9351165963124FB1CA /* libPods-MEDBRNLlama.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B08D2BB9AB9484A98D287957 /* libPods-MEDBRNLlama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA97DD6136B6CB7E026146FC /* libPods-MEDBRNLlama.a */; };
+		F7011222BC4D718C26C0FE76 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D79B54ADA4A91F64C4A71AB /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,21 @@
 		00E356EE1AD99517003FC87E /* MEDBRNLlamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEDBRNLlamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MEDBRNLlamaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEDBRNLlamaTests.m; sourceTree = "<group>"; };
+		111EE37B477D1DE8C6462BD2 /* Pods-MEDBRNLlama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama.debug.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* MEDBRNLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEDBRNLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MEDBRNLlama/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = MEDBRNLlama/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MEDBRNLlama/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MEDBRNLlama/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MEDBRNLlama/main.m; sourceTree = "<group>"; };
-		251E19389236CD89A948CDC0 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MEDBRNLlama-MEDBRNLlamaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A0BBC703EC9CB0D51B278BC /* Pods-MEDBRNLlama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama.release.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama.release.xcconfig"; sourceTree = "<group>"; };
+		175FA66E06DD5CEE319EC407 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D79B54ADA4A91F64C4A71AB /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MEDBRNLlama-MEDBRNLlamaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637E2F022BBF520A00EE58EB /* MEDBRNLlama.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MEDBRNLlama.entitlements; path = MEDBRNLlama/MEDBRNLlama.entitlements; sourceTree = "<group>"; };
+		651D787D06D65304F9E08659 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MEDBRNLlama/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85A905A866FEDD69E0E07E24 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		93D2CAA959406D92DB365008 /* Pods-MEDBRNLlama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama.debug.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama.debug.xcconfig"; sourceTree = "<group>"; };
+		859BA17375044B3C50DEAD51 /* Pods-MEDBRNLlama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama.release.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama.release.xcconfig"; sourceTree = "<group>"; };
+		B5B9AB9351165963124FB1CA /* libPods-MEDBRNLlama.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MEDBRNLlama.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EEE19E572D9B9E2380EBFAE4 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig"; path = "Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig"; sourceTree = "<group>"; };
-		FA97DD6136B6CB7E026146FC /* libPods-MEDBRNLlama.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MEDBRNLlama.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F533AAB98B18558F93167E7 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a in Frameworks */,
+				F7011222BC4D718C26C0FE76 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08D2BB9AB9484A98D287957 /* libPods-MEDBRNLlama.a in Frameworks */,
+				16A4EF11FABE61CF334A2AC7 /* libPods-MEDBRNLlama.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +87,7 @@
 		13B07FAE1A68108700A75B9A /* MEDBRNLlama */ = {
 			isa = PBXGroup;
 			children = (
+				637E2F022BBF520A00EE58EB /* MEDBRNLlama.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -100,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				FA97DD6136B6CB7E026146FC /* libPods-MEDBRNLlama.a */,
-				251E19389236CD89A948CDC0 /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a */,
+				B5B9AB9351165963124FB1CA /* libPods-MEDBRNLlama.a */,
+				3D79B54ADA4A91F64C4A71AB /* libPods-MEDBRNLlama-MEDBRNLlamaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +142,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93D2CAA959406D92DB365008 /* Pods-MEDBRNLlama.debug.xcconfig */,
-				2A0BBC703EC9CB0D51B278BC /* Pods-MEDBRNLlama.release.xcconfig */,
-				85A905A866FEDD69E0E07E24 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig */,
-				EEE19E572D9B9E2380EBFAE4 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig */,
+				111EE37B477D1DE8C6462BD2 /* Pods-MEDBRNLlama.debug.xcconfig */,
+				859BA17375044B3C50DEAD51 /* Pods-MEDBRNLlama.release.xcconfig */,
+				651D787D06D65304F9E08659 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig */,
+				175FA66E06DD5CEE319EC407 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MEDBRNLlamaTests" */;
 			buildPhases = (
-				670D425B17E9ACC740825F0F /* [CP] Check Pods Manifest.lock */,
+				45999D463E8E88307C1C9721 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				E271AE2BE0FC4D70F82FF261 /* [CP] Embed Pods Frameworks */,
-				6859F6723DFDA64D62BDC6E6 /* [CP] Copy Pods Resources */,
+				2DCA8444E737AA8DB6BF5BE8 /* [CP] Embed Pods Frameworks */,
+				DBDAB888415220BFD1D8928F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +178,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MEDBRNLlama" */;
 			buildPhases = (
-				578F8D028ED17FEEE3947559 /* [CP] Check Pods Manifest.lock */,
+				96FCA8ACFB5D6551409DA5B0 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				FC795F46C509835DC96262C4 /* [CP] Embed Pods Frameworks */,
-				07E95BC844663128BC6A03BA /* [CP] Copy Pods Resources */,
+				10067CCA9A197CA794AB985F /* [CP] Embed Pods Frameworks */,
+				E16BC0A7B820FA5BED0051E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,46 +267,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		07E95BC844663128BC6A03BA /* [CP] Copy Pods Resources */ = {
+		10067CCA9A197CA794AB985F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		578F8D028ED17FEEE3947559 /* [CP] Check Pods Manifest.lock */ = {
+		2DCA8444E737AA8DB6BF5BE8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MEDBRNLlama-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		670D425B17E9ACC740825F0F /* [CP] Check Pods Manifest.lock */ = {
+		45999D463E8E88307C1C9721 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,7 +323,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6859F6723DFDA64D62BDC6E6 /* [CP] Copy Pods Resources */ = {
+		96FCA8ACFB5D6551409DA5B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MEDBRNLlama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBDAB888415220BFD1D8928F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,38 +362,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E271AE2BE0FC4D70F82FF261 /* [CP] Embed Pods Frameworks */ = {
+		E16BC0A7B820FA5BED0051E7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama-MEDBRNLlamaTests/Pods-MEDBRNLlama-MEDBRNLlamaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC795F46C509835DC96262C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDBRNLlama/Pods-MEDBRNLlama-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +412,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85A905A866FEDD69E0E07E24 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig */;
+			baseConfigurationReference = 651D787D06D65304F9E08659 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -437,7 +439,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEE19E572D9B9E2380EBFAE4 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig */;
+			baseConfigurationReference = 175FA66E06DD5CEE319EC407 /* Pods-MEDBRNLlama-MEDBRNLlamaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -461,10 +463,11 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D2CAA959406D92DB365008 /* Pods-MEDBRNLlama.debug.xcconfig */;
+			baseConfigurationReference = 111EE37B477D1DE8C6462BD2 /* Pods-MEDBRNLlama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MEDBRNLlama/MEDBRNLlama.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LTQ4K9A3GK;
 				ENABLE_BITCODE = NO;
@@ -489,10 +492,11 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A0BBC703EC9CB0D51B278BC /* Pods-MEDBRNLlama.release.xcconfig */;
+			baseConfigurationReference = 859BA17375044B3C50DEAD51 /* Pods-MEDBRNLlama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MEDBRNLlama/MEDBRNLlama.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LTQ4K9A3GK;
 				INFOPLIST_FILE = MEDBRNLlama/Info.plist;
