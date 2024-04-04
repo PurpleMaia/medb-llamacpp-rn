@@ -1467,6 +1467,23 @@
     uuid "^9.0.0"
     zod "^3.22.3"
 
+"@langchain/core@^0.1.53":
+  version "0.1.53"
+  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.1.53.tgz#40bf273b6d5e1426c60ce9cc259562fe656573f1"
+  integrity sha512-khfRTu2DSCNMPUmnKx7iH0TpEaunW/4BgR6STTteRRDd0NFtXGfAwUuY9sm0+EKi/XKhdAmpGnfLwSfNg5F0Qw==
+  dependencies:
+    ansi-styles "^5.0.0"
+    camelcase "6"
+    decamelize "1.2.0"
+    js-tiktoken "^1.0.8"
+    langsmith "~0.1.7"
+    ml-distance "^4.0.0"
+    p-queue "^6.6.2"
+    p-retry "4"
+    uuid "^9.0.0"
+    zod "^3.22.4"
+    zod-to-json-schema "^3.22.3"
+
 "@langchain/core@~0.1.44", "@langchain/core@~0.1.45":
   version "0.1.52"
   resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.1.52.tgz#7619310b83ffa841628efe2e1eda873ca714d068"
@@ -5275,6 +5292,11 @@ prettier-linter-helpers@^1.0.0:
   integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
   dependencies:
     fast-diff "^1.1.2"
+
+prettier@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.2.5.tgz#e52bc3090586e824964a8813b09aba6233b28368"
+  integrity sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==
 
 pretty-format@^26.5.2, pretty-format@^26.6.2:
   version "26.6.2"

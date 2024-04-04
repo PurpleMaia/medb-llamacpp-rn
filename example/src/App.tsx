@@ -7,17 +7,82 @@ import type { DocumentPickerResponse } from 'react-native-document-picker'
 import { Chat, darkTheme } from '@flyerhq/react-native-chat-ui'
 import type { MessageType } from '@flyerhq/react-native-chat-ui'
 import ReactNativeBlobUtil from 'react-native-blob-util'
-import "react-native-polyfill-globals/auto";
-import structuredClone from "@ungap/structured-clone";
+import 'react-native-polyfill-globals/auto'
+import structuredClone from '@ungap/structured-clone'
 // import { ChatOpenAI } from "@langchain/openai";
+
+// import { ChatOllama } from '@langchain/community/chat_models/ollama'
+// import { ChatPromptTemplate } from '@langchain/core/prompts'
+
+// import { CSVLoader } from 'langchain/document_loaders/fs/csv'
+
+// import { StringOutputParser } from '@langchain/core/output_parsers'
+
 // eslint-disable-next-line import/no-unresolved
 import { initLlama, LlamaContext, convertJsonSchemaToGrammar } from 'llama.rn'
 import { Bubble } from './Bubble'
 
-
-if (!("structuredClone" in globalThis)) {
-  globalThis.structuredClone = structuredClone;
+if (!('structuredClone' in globalThis)) {
+  globalThis.structuredClone = structuredClone
 }
+
+/*
+const main = async () => {
+  let modelName = 'mistral:7b-instruct-v0.2-q4_K_M'
+
+  modelName = 'starling-lm-7b-beta:q4_k_m-temp0-4k'
+  let embeddingName = 'nomic-embed-text'
+  // Note that we should really use embedding instead of GPT
+  // // /* embeddingName = modelName; 
+  embeddingName = 'mxbai-embed-large:v1'
+
+  //let systemPrompt = "You are a world class small business coach."
+  // This CSV is about 11KB
+  // using mistral:7b-instruct-v0.2-q4_K_M and otherwise defaults,
+  // took ~10 seconds to make to load/index with MemoryVectorStore
+  let csvFileNameToLoad =
+    './Updted 2_22_24 MEDB - out-modified_joe_input_530pm_MEDB_Final_Grid_view.csv'
+
+  const query = 'What is a simple 3 step plan to start a bakery on Maui?'
+  let timeLabel = 'Load documents, filename: ' + csvFileNameToLoad
+  /*
+  // // const loader = new CSVLoader(csvFileNameToLoad);
+  
+  // // let timeLabel = "Load documents, filename: " + csvFileNameToLoad;
+  // // console.time(timeLabel);
+  // // const docs = await loader.load();
+  // // console.timeEnd(timeLabel);
+  
+  timeLabel = 'new ChatOllama, modelName: ' + modelName
+  console.time(timeLabel)
+  const chatModel = new ChatOllama({
+    baseUrl: 'http://localhost:11434', // Default value
+    model: modelName,
+  })
+  console.timeEnd(timeLabel)
+
+  const outputParser = new StringOutputParser()
+  let systemPrompt = 'You are a world class small business coach.'
+  const prompt = ChatPromptTemplate.fromMessages([
+    ['system', systemPrompt],
+    ['user', '{input}'],
+  ])
+  /*const prompt =
+  // //   ChatPromptTemplate.fromTemplate(`Answer the following question using the provided context:
+
+// // <context>
+// // {context}
+// // </context>
+
+// // Question: {input}`);
+
+  const llmChain = prompt.pipe(chatModel).pipe(outputParser)
+  const result = await llmChain.invoke({
+    input: query,
+  })
+  console.log(result)
+}
+*/
 
 /* const chatModel = new ChatOpenAI({
   openAIApiKey: "something",
@@ -123,13 +188,14 @@ export default function App() {
       .then((ctx) => {
         setContext(ctx)
         addSystemMessage(
-          `Context initialized! \n\nGPU: ${ctx.gpu ? 'YES' : 'NO'} (${ctx.reasonNoGPU
+          `Context initialized! \n\nGPU: ${ctx.gpu ? 'YES' : 'NO'} (${
+            ctx.reasonNoGPU
           })\n\n` +
-          'You can use the following commands:\n\n' +
-          '- /bench: to benchmark the model\n' +
-          '- /release: release the context\n' +
-          '- /stop: stop the current completion\n' +
-          '- /reset: reset the conversation',
+            'You can use the following commands:\n\n' +
+            '- /bench: to benchmark the model\n' +
+            '- /release: release the context\n' +
+            '- /stop: stop the current completion\n' +
+            '- /reset: reset the conversation',
         )
       })
       .catch((err) => {
@@ -149,8 +215,9 @@ export default function App() {
             if (!(await ReactNativeBlobUtil.fs.isDir(dir)))
               await ReactNativeBlobUtil.fs.mkdir(dir)
 
-            const filepath = `${dir}/${file.uri.split('/').pop() || 'model'
-              }.gguf`
+            const filepath = `${dir}/${
+              file.uri.split('/').pop() || 'model'
+            }.gguf`
             if (await ReactNativeBlobUtil.fs.exists(filepath)) {
               handleInitContext({ uri: filepath } as DocumentPickerResponse)
               return
@@ -179,7 +246,7 @@ export default function App() {
           const t0 = Date.now()
           await context.bench(8, 4, 1, 1)
           const tHeat = Date.now() - t0
-          if (tHeat > 1E4) {
+          if (tHeat > 1e4) {
             addSystemMessage('Heat up time is too long, please try again.')
             return
           }
@@ -216,22 +283,30 @@ export default function App() {
           addSystemMessage('Conversation reset!')
           return
         case '/save-session':
-          context.saveSession(`${dirs.DocumentDir}/llama-session.bin`).then(tokensSaved => {
-            console.log('Session tokens saved:', tokensSaved)
-            addSystemMessage(`Session saved! ${tokensSaved} tokens saved.`)
-          }).catch(e => {
-            console.log('Session save failed:', e)
-            addSystemMessage(`Session save failed: ${e.message}`)
-          })
+          context
+            .saveSession(`${dirs.DocumentDir}/llama-session.bin`)
+            .then((tokensSaved) => {
+              console.log('Session tokens saved:', tokensSaved)
+              addSystemMessage(`Session saved! ${tokensSaved} tokens saved.`)
+            })
+            .catch((e) => {
+              console.log('Session save failed:', e)
+              addSystemMessage(`Session save failed: ${e.message}`)
+            })
           return
         case '/load-session':
-          context.loadSession(`${dirs.DocumentDir}/llama-session.bin`).then(details => {
-            console.log('Session loaded:', details)
-            addSystemMessage(`Session loaded! ${details.tokens_loaded} tokens loaded.`)
-          }).catch(e => {
-            console.log('Session load failed:', e)
-            addSystemMessage(`Session load failed: ${e.message}`)
-          })
+          context
+            .loadSession(`${dirs.DocumentDir}/llama-session.bin`)
+            .then((details) => {
+              console.log('Session loaded:', details)
+              addSystemMessage(
+                `Session loaded! ${details.tokens_loaded} tokens loaded.`,
+              )
+            })
+            .catch((e) => {
+              console.log('Session load failed:', e)
+              addSystemMessage(`Session load failed: ${e.message}`)
+            })
           return
       }
     }
@@ -411,6 +486,7 @@ export default function App() {
         addSystemMessage(`Completion failed: ${e.message}`)
       })
   }
+  main()
 
   return (
     <SafeAreaProvider>
